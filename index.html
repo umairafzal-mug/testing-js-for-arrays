@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+        function calculater(op, value1, value2) {
+            if        (op === "/") {
+                document.getElementById("demo").innerHTML = (value1 / value2);
+            } else if (op === "*") {
+                document.getElementById("demo").innerHTML = (value1 * value2);
+            } else if (op === "+") {
+                document.getElementById("demo").innerHTML = (value1 + value2);
+            } else if (op === "-") {
+                document.getElementById("demo").innerHTML = (value1 - value2);
+            }
+
+        }
+
+
+        let value1 = prompt("Enter first num")
+        let op = prompt("Enter perator")
+        let value2 = prompt("Enter second num")
+        document.getElementById("demo").innerHTML = (value1, op, value2);
+
+        calculater(op, value1, value2);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
